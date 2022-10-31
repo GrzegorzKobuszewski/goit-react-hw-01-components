@@ -9,6 +9,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     let parts=n.toString().split(".");
     return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ") + (parts[1] ? "." + parts[1] : "");
   }
+
   return <div className={ProfileCSS.profile}>
     <div className={ProfileCSS.description}>
     <img src={avatar} alt="User avatar" className={ProfileCSS.avatar} />

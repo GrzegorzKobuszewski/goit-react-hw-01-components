@@ -10,10 +10,11 @@ export const Stats = ({ title, stats }) => {
                 <li
                     className={StatsCSS.item}
                     key={id}
-                    style={{ backgroundColor: randomColorInHex() }}
+                    style={{ backgroundColor: myBackgroundColor }}
+                    /*style={{ backgroundColor: randomColorInHex() }}*/
                 >
-                    <span className={StatsCSS.label} style={{ color: myColor }}>{label}</span>
-                    <span className={StatsCSS.percentage}>{percentage}%</span>
+                    <span className={StatsCSS.label} style={{ color: myTextColor }}>{label}</span>
+                    <span className={StatsCSS.percentage} style={{ color: myTextColor }}>{percentage}%</span>
                 </li>
             ))}
         </ul>
@@ -21,14 +22,16 @@ export const Stats = ({ title, stats }) => {
     )
 }
 
-/* Funkcja na całkowicie losowy kolor w HEX:
-*/
+/* Funkcja na całkowicie losowy kolor w HEX: Zrezygnowałem z niej, bo czasami są niwidoczne napisy
 
 const randomColorInHex = () => {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
 
-const myColor = '#fff';
+*/
+
+const myBackgroundColor = '#007aff';
+const myTextColor = '#fff';
 
 Stats.propTypes = {
     title: PropTypes.string,
