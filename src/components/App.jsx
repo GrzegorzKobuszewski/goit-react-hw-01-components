@@ -29,7 +29,7 @@ export const App = () => {
       />
       <Stats stats={data} title="Upload stats" />
       <FriendList friends={friends} />
-      <TransactionHistory transactions={transactions} />
+      <TransactionHistory items={transactions} /> {/*BŁĄD: miałem "items" wpisane "transactions" i compilacja była successfully, ale nie wyświetlało wyników}*/}
       {/*React homework template!*/}
     </div>
   );

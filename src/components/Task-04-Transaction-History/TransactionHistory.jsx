@@ -6,7 +6,7 @@ export const TransactionHistory = ({ items }) => {
         <table className={TransactionHistoryCSS.transactionHistory}>
             <thead>
                 {/*W tym przypadku można nie pisać className'ów className={TransactionHistoryCSS.tr}, ponieważ są znane przez CSS*/}
-                <tr className={TransactionHistoryCSS.tittle}>
+                <tr className={TransactionHistoryCSS.title}>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
