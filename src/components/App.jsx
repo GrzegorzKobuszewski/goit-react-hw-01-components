@@ -1,18 +1,12 @@
 import { Profile } from '../components/Task-01-Profile/Profile';
 import { Stats } from '../components/Task-02-Stats/Stats';
 import { FriendList } from '../components/Task-03-Friends-List/FriendList';
-
-/*
 import { TransactionHistory } from '../components/Task-04-Transaction-History/TransactionHistory';
-*/
 
 import user from '../components/Task-01-Profile/user.json';
 import data from '../components/Task-02-Stats/data.json';
 import friends from '../components/Task-03-Friends-List/friends.json';
-
-/*
 import transactions from '../components/Task-04-Transaction-History/transactions.json';
-*/
 
 export const App = () => {
   return (
@@ -35,7 +29,7 @@ export const App = () => {
       />
       <Stats stats={data} title="Upload stats" />
       <FriendList friends={friends} />
-      {/*<TransactionHistory transactions={transactions} />*/}
+      <TransactionHistory transactions={transactions} />
       {/*React homework template!*/}
     </div>
   );
